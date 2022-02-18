@@ -6,13 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS revise</title>
+
+    <style>
+        .player:first-child {
+            background-color: darkkhaki;
+        }
+
+        .player-name {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: goldenrod;
+        }
+    </style>
+
 </head>
 
 <body>
     <header>
         <h1>Players Stats</h1>
     </header>
-    <section>
+    <section id='players'>
         <!-- div.player*4>h4.player-name{Player - $}+p>lorem30 -->
         <div class="player">
             <h4 class="player-name">Player - 1</h4>
@@ -38,7 +51,11 @@
                 saepe asperiores culpa magni, distinctio tempore ipsum maiores fugit officiis consectetur tempora minima
                 suscipit sit. Ab.</p>
         </div>
+
+        <button onclick="addPlayer()">Add Player</button>
     </section>
+
+    <script src="players.js"></script>
 </body>
 
 </html>
